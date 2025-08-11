@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - E-Commerce</title>
+  <!-- ملف التصميم الموحد -->
+<link rel="stylesheet" href="style.css">
+
+  <!-- SweetAlert -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+</head>
+<body>
+  <div class="login-container">
+    <!-- Image Side -->
+    <div class="image-side">
+      <img src="https://images.pexels.com/photos/33272192/pexels-photo-33272192.jpeg" alt="Fashion Image">
+    </div>
+
+    <!-- Form Side -->
+    <div class="form-side">
+      <h2>Welcome Back!</h2>
+      <p>Please login to continue shopping</p>
+      
+      <form id="loginForm">
+        <input type="text" id="loginEmail" placeholder="Username" required />
+        <input type="password" id="loginPassword" placeholder="Password" required />
+        <button type="submit">Login</button>
+        <p class="signup-link">Don't have an account? <a href="#">Sign up</a></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script src="login.js"></script>
+
+</body>
+</html>
