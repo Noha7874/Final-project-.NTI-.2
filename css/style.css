@@ -197,7 +197,7 @@ body {
   width: 100%;
   background: transparent;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 15px 50px;
   z-index: 1000;
@@ -251,6 +251,17 @@ body {
     margin: 0;
     padding: 0;
 }
+.nav-links li:last-child a {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.navbar.scrolled .nav-links li:last-child a {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 
 .mySwiper {
     width: 100%;

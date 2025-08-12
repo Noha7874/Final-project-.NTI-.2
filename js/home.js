@@ -9,7 +9,6 @@ window.addEventListener("scroll", function () {
 
 
 
-// تفعيل السلايدر
 var swiper = new Swiper(".mySwiper", {
     loop: true,
     autoplay: {
@@ -47,7 +46,6 @@ function addToCartFromHome(productName, price) {
   alert(`${productName} added to cart!`);
 }
 
-// لما الصفحة تحمل، اربط كل الأزرار
 document.addEventListener("DOMContentLoaded", () => {
   updateCartCount();
 

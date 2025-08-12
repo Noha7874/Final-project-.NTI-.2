@@ -2,7 +2,6 @@
 const USERNAME = "noha";
 const PASSWORD = "1234";
 
-// التعامل مع الفورم
 document.getElementById("loginForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
@@ -19,7 +18,6 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
     }
 
     if (email === USERNAME && password === PASSWORD) {
-        // حفظ حالة الدخول
         localStorage.setItem("isLoggedIn", "true");
         
         Swal.fire({

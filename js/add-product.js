@@ -43,9 +43,3 @@ document.getElementById("productForm").addEventListener("submit", function(e) {
     this.reset();
     document.getElementById("previewImage").style.display = "none";
 });
-
-// Logout functionality
-document.getElementById("logoutBtn").addEventListener("click", function() {
-    localStorage.removeItem("isLoggedIn");
-    window.location.href = "../e-commerce-project/index.html";
-});
