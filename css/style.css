@@ -111,26 +111,67 @@ button:hover {
   text-decoration: underline;
 }
 
-/* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
+/* ====== التنسيقات الحالية اللي عندك تظل كما هي فوق ====== */
+
+/* ====== تنسيقات الريسبونسيف ====== */
+@media (max-width: 1024px) {
+  .form-side {
+    padding: 30px;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  .form-side h2 {
+    font-size: 24px;
   }
 }
 
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-15px);
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    height: auto;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  .image-side {
+    flex: none;
+    height: 250px;
+    padding: 0;
+  }
+
+  .image-side img {
+    border-radius: 0;
+    height: 100%;
+  }
+
+  .form-side {
+    flex: none;
+    padding: 20px;
+    box-shadow: none;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  input, button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-side h2 {
+    font-size: 20px;
+  }
+
+  .form-side p {
+    font-size: 14px;
+  }
+
+  input, button {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .signup-link {
+    font-size: 13px;
   }
 }
 
@@ -331,13 +372,13 @@ body {
 .offer-banner {
   position: relative;
   display: inline-block;
-  width: 100%; /* عشان تمتد بعرض الصفحة */
+  width: 100%; 
   text-align: center;
 }
 
 .offer-banner img {
-  width: 100%; /* الصورة تاخد عرض الـ banner بالكامل */
-  height: auto; /* تحافظ على النسبة */
+  width: 100%; 
+  height: auto; 
   border-radius: 10px;
   display: block;
 }
@@ -346,9 +387,9 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; /* نفس عرض الصورة */
-  height: 100%; /* نفس ارتفاع الصورة */
-  background: rgba(0, 0, 0, 0.5); /* خلفية سوداء شفافة */
+  width: 100%;
+  height: 100%; 
+  background: rgba(0, 0, 0, 0.5); 
   display: flex;
   justify-content: center;
   align-items: center;
